@@ -1,0 +1,72 @@
+$white: #FAFAFA;
+$secondary: #9A571B;
+$text: #A0A0A0;
+$black: #000000;
+
+.hidden {
+  display: none;
+}
+
+a .button-primary {
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border:1px solid $white;
+  color: $white;
+  background-color: transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+// 1 rem = 16px
+// 0.5rem = 8px
+// 0.75rem = 12px
+
+.center {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      display: flex;
+      
+      ul {
+        display: flex;
+        color: $white;
+      }
+    }
+  }
+  
+}
+
+.glide {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 3rem;
+
+  .glide__slide img {
+    width:100%;
+   }
+}
+
+
+@media (max-width: 700px) {
+  .glide {
+    padding-inline: 0;
+    .glide__arrows {
+      display: none;
+    }
+  }
+}

@@ -207,6 +207,7 @@ header .header-content nav ul li:hover::before {
   background-image: url("../assets/orcamento.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   color: #FAFAFA;
   position: relative;
 }
@@ -425,6 +426,7 @@ footer {
     bottom: 0rem;
     transform: translateX(-50%);
     gap: 0.3rem;
+    color: white;
   }
   #estudio .container .social-media .insta a {
     font-size: 0.8rem;

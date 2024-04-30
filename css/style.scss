@@ -234,6 +234,7 @@ header {
   background-image: url('../assets/orcamento.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   color: $white;
   position: relative;
 
@@ -508,6 +509,7 @@ footer {
         bottom: 0rem;
         transform: translateX(-50%);
         gap: 0.3rem;
+        color: white;
         
         .insta {
           a {

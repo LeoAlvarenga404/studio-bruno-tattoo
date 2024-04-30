@@ -6,12 +6,16 @@ $black: #000000;
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  color: $white;
+}
 .hidden, .menu {
   display: none;
 }
 
 .pd-block {
-  padding-block: 6.25rem;
+  padding-block: 5.25rem;
 }
 
 .button-primary {
@@ -210,7 +214,7 @@ header {
 }
 
 #tattoo {
-  padding-block: 6.25rem;
+  padding-bottom: 5.25rem;
   h1 {
     text-align: center;
     color: $white;
@@ -233,7 +237,7 @@ header {
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.808);
   }
 
   .content {
@@ -244,19 +248,85 @@ header {
     align-items: center;
     flex-direction: column;
     font-family: 'Alata', sans-serif;
+    padding-block:8rem;
     h1 {
       font-size: 3rem;
       
     }
     h3 {
       font-size: 1.8rem;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
 
   }
 }
-@media (max-width: 700px) {
 
+#estudio {
+  margin-block: 5.25rem;
+  background-image: url('../assets/estudio.png');
+  background-image: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  .title {
+    text-align: center;
+    margin-bottom: 3rem;
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+
+    .localizacao {
+      display: flex;
+      
+      
+      i {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+    }
+    .social-media {
+      display: flex;
+      gap: 1rem;
+      position: absolute;
+      bottom: 0;
+      left: 9rem;
+      .whatsapp a, .insta a {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        
+      }
+    }
+  }
+  
+}
+
+footer {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid $text;
+}
+
+
+
+@media (max-width: 700px) {
+  
   header {
     .header-content {
       justify-content: center;
@@ -314,7 +384,16 @@ header {
       }
     }
   }
-
+  .banner {
+    height: 70vh;
+  }
+  #hero {
+    .text-wrapper {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
   .glide {
     padding-inline: 0;
     .glide__arrows {

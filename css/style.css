@@ -2,12 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: #FAFAFA;
+}
+
 .hidden, .menu {
   display: none;
 }
 
 .pd-block {
-  padding-block: 6.25rem;
+  padding-block: 5.25rem;
 }
 
 .button-primary {
@@ -185,7 +189,7 @@ header .header-content nav ul li:hover::before {
 }
 
 #tattoo {
-  padding-block: 6.25rem;
+  padding-bottom: 5.25rem;
 }
 #tattoo h1 {
   text-align: center;
@@ -207,7 +211,7 @@ header .header-content nav ul li:hover::before {
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.808);
 }
 #orcamento .content {
   width: 100%;
@@ -217,13 +221,66 @@ header .header-content nav ul li:hover::before {
   align-items: center;
   flex-direction: column;
   font-family: "Alata", sans-serif;
+  padding-block: 8rem;
 }
 #orcamento .content h1 {
   font-size: 3rem;
 }
 #orcamento .content h3 {
   font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+#estudio {
+  margin-block: 5.25rem;
+  background-image: url("../assets/estudio.png");
+  background-image: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#estudio .title {
+  text-align: center;
   margin-bottom: 3rem;
+}
+#estudio .title h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+#estudio .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+#estudio .container .localizacao {
+  display: flex;
+}
+#estudio .container .localizacao i {
+  font-size: 3rem;
+}
+#estudio .container .localizacao p {
+  font-size: 1.25rem;
+}
+#estudio .container .social-media {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 9rem;
+}
+#estudio .container .social-media .whatsapp a, #estudio .container .social-media .insta a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+footer {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #A0A0A0;
 }
 
 @media (max-width: 700px) {
@@ -272,6 +329,12 @@ header .header-content nav ul li:hover::before {
   }
   header .header-content nav .button-primary {
     display: none;
+  }
+  .banner {
+    height: 70vh;
+  }
+  #hero .text-wrapper h1 {
+    font-size: 2rem;
   }
   .glide {
     padding-inline: 0;

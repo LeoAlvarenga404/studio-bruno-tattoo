@@ -179,6 +179,7 @@ header .header-content nav ul li:hover::before {
   color: #A0A0A0;
   width: 100%;
   max-width: 40rem;
+  min-width: 20rem;
   text-align: justify;
   line-height: 1.8rem;
   font-size: 1.313rem;
@@ -284,6 +285,13 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .button-primary {
+    padding: 1rem 1rem;
+    font-size: 0.7rem;
+  }
+  .pd-block {
+    padding-block: 3rem;
+  }
   header .header-content {
     justify-content: center;
   }
@@ -331,15 +339,71 @@ footer {
     display: none;
   }
   .banner {
-    height: 70vh;
+    height: 30rem;
+  }
+  #hero {
+    padding-top: 3rem;
+    justify-content: start;
+  }
+  #hero .text-wrapper {
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: center;
   }
   #hero .text-wrapper h1 {
     font-size: 2rem;
+  }
+  #hero .text-wrapper span {
+    font-size: 1rem;
+  }
+  #sobre .content {
+    padding-inline: 1rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  #sobre .content img {
+    width: 100%;
+  }
+  #sobre .content .sobre-text {
+    text-align: center;
+  }
+  #sobre .content p {
+    width: 100%;
+    max-width: 40rem;
+    min-width: 5rem;
   }
   .glide {
     padding-inline: 0;
   }
   .glide .glide__arrows {
     display: none;
+  }
+  #estudio .title h1 {
+    font-size: 2rem;
+  }
+  #estudio .container {
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+  }
+  #estudio .container .localizacao a {
+    font-size: 1rem;
+  }
+  #estudio .container .social-media {
+    flex-direction: column;
+    left: 50%;
+    bottom: 0rem;
+    transform: translateX(-50%);
+    gap: 0.3rem;
+  }
+  #estudio .container .social-media .insta a {
+    font-size: 0.8rem;
+  }
+  #estudio .container .social-media .whatsapp a {
+    font-size: 0.8rem;
+  }
+  #estudio .container iframe {
+    width: 100%;
+    height: 12rem;
   }
 }/*# sourceMappingURL=style.css.map */

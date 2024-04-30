@@ -24,6 +24,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  text-align: center;
 }
 .button-primary:hover {
   background-color: #FAFAFA;
@@ -40,6 +41,7 @@ header {
   position: relative;
   padding-block: 1.25rem;
   background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.3));
+  padding-inline: 1rem;
 }
 header .header-content {
   display: flex;
@@ -53,6 +55,7 @@ header .header-content nav {
   display: flex;
   align-items: center;
   gap: 5rem;
+  margin-left: 1rem;
 }
 header .header-content nav ul {
   display: flex;
@@ -152,6 +155,7 @@ header .header-content nav ul li:hover::before {
   justify-content: space-between;
   color: #FAFAFA;
   gap: 5rem;
+  padding-inline: 2rem;
 }
 #sobre .content img {
   width: 100%;
@@ -268,7 +272,7 @@ header .header-content nav ul li:hover::before {
   gap: 1rem;
   position: absolute;
   bottom: 0;
-  left: 9rem;
+  left: 10%;
 }
 #estudio .container .social-media .whatsapp a, #estudio .container .social-media .insta a {
   display: flex;
@@ -308,13 +312,14 @@ footer {
     position: absolute;
     align-items: start;
     flex-direction: column;
-    width: 18rem;
+    width: 100%;
+    max-width: 25rem;
     left: 0;
-    height: calc(100vh - 7rem);
     top: 0;
     background-color: rgb(0, 0, 0);
     padding-top: 7rem;
     z-index: 1;
+    margin: 0;
   }
   header .header-content nav.appear {
     display: flex;
@@ -323,7 +328,8 @@ footer {
     flex-direction: column;
     align-items: start;
     gap: 0;
-    width: 18rem;
+    width: 100%;
+    max-width: 25rem;
   }
   header .header-content nav ul li {
     padding: 0;
@@ -346,12 +352,12 @@ footer {
     justify-content: start;
   }
   #hero .text-wrapper {
-    padding: 0;
+    padding: 1rem;
     margin-bottom: 2rem;
     text-align: center;
   }
   #hero .text-wrapper h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   #hero .text-wrapper span {
     font-size: 1rem;
@@ -360,6 +366,7 @@ footer {
     padding-inline: 1rem;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
   }
   #sobre .content img {
     width: 100%;
@@ -367,19 +374,42 @@ footer {
   #sobre .content .sobre-text {
     text-align: center;
   }
+  #sobre .content h2 {
+    font-size: 2.2rem;
+  }
   #sobre .content p {
+    margin-top: 2rem;
     width: 100%;
     max-width: 40rem;
     min-width: 5rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
-  .glide {
+  #tattoo h1 {
+    font-size: 2.5rem;
+  }
+  #tattoo .glide {
     padding-inline: 0;
   }
-  .glide .glide__arrows {
+  #tattoo .glide .glide__arrows {
     display: none;
+  }
+  #orcamento .content {
+    padding-block: 4rem;
+    text-align: center;
+  }
+  #orcamento .content h1 {
+    font-size: 2.3rem;
+  }
+  #orcamento .content h3 {
+    font-size: 1.2rem;
+  }
+  #estudio {
+    margin: 0;
   }
   #estudio .title h1 {
     font-size: 2rem;
+    padding-inline: 1rem;
   }
   #estudio .container {
     flex-direction: column;
@@ -405,5 +435,22 @@ footer {
   #estudio .container iframe {
     width: 100%;
     height: 12rem;
+  }
+}
+@media (min-width: 651px) and (max-width: 1000px) {
+  #estudio .title h1 {
+    font-size: 2rem;
+  }
+  #estudio .container {
+    gap: 2rem;
+  }
+  #estudio .container .localizacao {
+    padding-left: 2rem;
+  }
+  #estudio .container iframe {
+    height: 10rem;
+    max-width: 20rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

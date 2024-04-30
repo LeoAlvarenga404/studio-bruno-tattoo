@@ -18,6 +18,8 @@ body {
   padding-block: 5.25rem;
 }
 
+
+
 .button-primary {
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -28,7 +30,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-
+  text-align: center;
 
   &:hover {
     background-color: $white;
@@ -46,7 +48,7 @@ header {
   position: relative;
   padding-block: 1.25rem;
   background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.3));
-  
+  padding-inline: 1rem;
   .header-content {
     display: flex;
     justify-content: space-between;
@@ -59,6 +61,7 @@ header {
       display: flex;
       align-items: center;
       gap: 5rem;
+      margin-left: 1rem;
       ul {
         display: flex;
         color: $white;
@@ -167,11 +170,13 @@ header {
 
 #sobre {
   position: relative;
+  
   .content {
     display: flex;
     justify-content: space-between;
     color: $white;
     gap: 5rem;
+    padding-inline: 2rem;
 
     img {
       width: 100%;
@@ -268,7 +273,6 @@ header {
   background-image: cover;
   background-repeat: no-repeat;
   height: 100%;
-
   .title {
     text-align: center;
     margin-bottom: 3rem;
@@ -304,7 +308,7 @@ header {
       gap: 1rem;
       position: absolute;
       bottom: 0;
-      left: 9rem;
+      left: 10%;
       .whatsapp a, .insta a {
         display: flex;
         align-items: center;
@@ -346,6 +350,7 @@ footer {
         left: 1rem;
         z-index: 999;
 
+
       }
 
       
@@ -354,13 +359,15 @@ footer {
         position: absolute;
         align-items: start;
         flex-direction: column;
-        width: 18rem;
+        width: 100%;
+        max-width: 25rem;
         left: 0;
-        height: calc(100vh - 7rem);
+        
         top: 0;
         background-color: rgb(0, 0, 0);
         padding-top: 7rem;
         z-index: 1;
+        margin: 0;
 
         &.appear {
           display: flex;
@@ -369,7 +376,8 @@ footer {
           flex-direction: column;
           align-items: start;
           gap: 0;
-          width: 18rem;
+          width: 100%;
+          max-width: 25rem;
           
 
           li {
@@ -398,23 +406,27 @@ footer {
   #hero {
     padding-top: 3rem;
     justify-content: start;
+  
     .text-wrapper {
-      padding: 0;
+      padding: 1rem;
       margin-bottom: 2rem;
       text-align: center;
       h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
       span {
         font-size: 1rem;
       }
     }
   }
+
+
   #sobre {
     .content {
       padding-inline: 1rem;
       align-items: center;
       flex-direction: column;
+      gap: 1rem;
       img {
         width: 100%;
         
@@ -422,30 +434,62 @@ footer {
       
       
       .sobre-text {
-        
         text-align: center;
       }
+
+      h2 {
+        font-size: 2.2rem;
+      }
       p {
+        margin-top: 2rem;
         width: 100%;
         max-width: 40rem;
         min-width: 5rem;
+        font-size:1rem;
+        line-height: 1.4rem;
         
       }
 
     }
   }
-  .glide {
-    padding-inline: 0;
-    .glide__arrows {
-      display: none;
+
+  #tattoo {
+    h1 {
+      font-size: 2.5rem;
     }
+
+    .glide {
+      padding-inline: 0;
+      .glide__arrows {
+        display: none;
+      }
+    }
+  
   }
 
+  #orcamento {
+    
+    .content {
+      padding-block: 4rem;
+      text-align: center;
+      
+      h1 {
+        font-size: 2.3rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    
+  }
 
   #estudio {
+    margin: 0;
+
     .title {
       h1 {
         font-size: 2rem;
+        padding-inline: 1rem;
       }
     }
     .container {
@@ -481,6 +525,32 @@ footer {
         width: 100%;
         height: 12rem;
       }
+    }
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  #estudio {
+
+    .title {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .container {
+      gap: 2rem;
+
+      .localizacao {
+        padding-left: 2rem;
+        
+      }
+      iframe {
+        height: 10rem;
+        max-width: 20rem;
+        padding-bottom: 4rem;
+        padding-right: 2rem;
+    }
+      
     }
   }
 }

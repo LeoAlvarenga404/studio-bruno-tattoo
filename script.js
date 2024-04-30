@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
   const menu = document.getElementById('menu');
   const nav = document.querySelector('header .header-content nav');
+  const icon = menu.querySelector('i');
+  
   menu.addEventListener('click', () => {
+    if (icon.classList.contains('ph-list')) {
+      icon.classList.remove('ph-list');
+      icon.classList.add('ph-x');
+    }else {
+      icon.classList.remove('ph-x');
+      icon.classList.add('ph-list');
+    }
     nav.classList.toggle('appear')
   })
 

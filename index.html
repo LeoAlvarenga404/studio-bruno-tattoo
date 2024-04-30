@@ -17,44 +17,77 @@
   <title>Studio Bruno Tattoo</title>
 </head>
 <body>
+  <div class="banner">
   <header>
     <div class="header-content center">
-      <div class="menu hidden">
+      <div class="menu" id="menu">
         <i class="ph ph-list"></i>
       </div>
       <img src="assets/logo.svg" alt="Logo do Studio Bruno tattoo">
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Tattoo</li>
-          <li>Localização</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Tattoo</a></li>
+          <li><a href="#">Estúdio</a></li>
         </ul>
-        <a href="https://wa.me/5511919863074?text=Agende%20sua%20tatuagem"><button class="button-primary">Entre em contato</button></a>
+        <a class="button-primary" href="https://wa.me/5511919863074?text=Agende%20sua%20tatuagem">Entre em contato</a>
       </nav>
     </div>
   </header>
-    <div class="glide hidden">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-          <div class="glide__slide"><img src="assets/tattoo1.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo2.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo3.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo4.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo5.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo6.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo7.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo8.png" alt=""></div>
-          <div class="glide__slide"><img src="assets/tattoo9.png" alt=""></div>
-        </ul>
+  <main>
+    <section id="hero">
+      <div class="text-wrapper">
+        <h1>Studio<br>Bruno Tattoo</h1>
+        <span>“Marcando sua história na pele com arte e profissionalismo.”</span>
+
       </div>
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="ph ph-caret-left"></i></button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="ph ph-caret-right"></i>
-        </button>
+      <a class="button-primary" href="#sobre">Conheça meu trabalho!</a>
+    </section>
+  </div>
+    <section id="sobre" class="center pd-block">
+      <div class="content">
+        <img src="assets/profile.png" alt="Imagem do Bruno Silva tatuando um braço.">
+        <div class="sobre-text">
+          <div>
+            <h2>Bruno Silva</h2>
+            <span>Tatuador</span>
+          </div>
+            <p>tatuador com uma sólida base em arte, fruto de anos de estudo e prática em desenho. Comecei minha jornada como tatuador em agosto e desde então tenho me dedicado a aprimorar minhas habilidades. No Studio Bruno Tattoo, aplico minha paixão e experiência para criar tatuagens que são verdadeiras obras de arte, cada uma contando uma história única. Estou ansioso para transformar suas ideias em tatuagens incríveis.</p>
+        </div>
       </div>
-    </div>
+    </section> 
+    <section id="tattoo">
+      <h1>Artes</h1>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <div class="glide__slide"><img src="assets/tattoo1.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo2.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo3.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo4.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo5.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo6.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo7.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo8.png" alt="imagem de uma tatuagem"></div>
+            <div class="glide__slide"><img src="assets/tattoo9.png" alt="imagem de uma tatuagem"></div>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide_arrow glide_arrow--left" data-glide-dir="<"><i class="ph ph-caret-left"></i></button>
+          <button class="glide_arrow glide_arrow--right" data-glide-dir=">"><i class="ph ph-caret-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="orcamento">
+      <div class="content pd-block">
+        <h1>Solicite um orçamento</h1>
+        <h3>E agende sua tatuagem</h3>
+        <a class="button-primary" href="https://wa.me/5511919863074?text=Agende%20sua%20tatuagem">Entre em contato</a>
+      </div>
+    </section>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
-
 </html>

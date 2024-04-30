@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const menu = document.getElementById('menu');
+  const nav = document.querySelector('header .header-content nav');
+  menu.addEventListener('click', () => {
+    nav.classList.toggle('appear')
+  })
+
   new Glide('.glide', {
     type: 'carousel',
     perView: 4,
